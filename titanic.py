@@ -16,7 +16,7 @@ st.markdown("<h1 style='text-align: center; color: #5A4FCF;'>Titanic Survival Pr
 st.write("Developing a machine learning model aimed at predicting the survival of passengers on the Titanic. For this purpose, I am utilizing a Decision Tree classifier. This involves analyzing various features of the passengers, such as age, gender, ticket class, and more, to determine their likelihood of survival.")
 
 data = pd.read_csv('Decesion_tree//titanic.csv').drop(["PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked"],axis="columns")
-df = pd.read_csv('Decesion_tree/df.csv')
+df = pd.read_csv('df.csv')
 df = df.drop(df.columns[0],axis='columns')
 # st.table(df)
 col1,col2 = st.columns([1,1])
@@ -39,8 +39,8 @@ co1,co2 = st.columns([1,1])
 
 x_train, x_test, y_train, y_test = train_test_split(df.drop(['Survived'],axis='columns'),df['Survived'], test_size=0.2,random_state=10)
 
-model = joblib.load("D:\\Machine_learning\\Decesion_tree\\model.jb")
-label = joblib.load("D:\\Machine_learning\\Decesion_tree\\label.jb")
+model = joblib.load("model.jb")
+# label = joblib.load("label.jb")
 y_pred = model.predict(x_test)
 
 
