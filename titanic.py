@@ -15,7 +15,7 @@ st.markdown("<h1 style='text-align: center; color: #5A4FCF;'>Titanic Survival Pr
 
 st.write("Developing a machine learning model aimed at predicting the survival of passengers on the Titanic. For this purpose, I am utilizing a Decision Tree classifier. This involves analyzing various features of the passengers, such as age, gender, ticket class, and more, to determine their likelihood of survival.")
 
-data = pd.read_csv('Decesion_tree//titanic.csv').drop(["PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked"],axis="columns")
+data = pd.read_csv('titanic.csv').drop(["PassengerId","Name","SibSp","Parch","Ticket","Cabin","Embarked"],axis="columns")
 df = pd.read_csv('df.csv')
 df = df.drop(df.columns[0],axis='columns')
 # st.table(df)
