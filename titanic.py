@@ -8,7 +8,7 @@ import joblib
 
 
 
-st.set_page_config(page_title="Titanic Survival Prediction",page_icon="🚢",layout='centered')
+st.set_page_config(page_title="Titanic Survival Prediction",page_icon="🚢",layout='wide')
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center; color: #5A4FCF;'>Titanic Survival Prediction 🚢</h1>", unsafe_allow_html=True)
